@@ -1,0 +1,62 @@
+.adventureSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .travelOutlets {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .travelOutlets div {
+    text-align: center;
+  }
+  
+  .travelOutlets img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+  }
+  .travelOutlets img:hover{
+    transform:scale(1.1);
+  }
+  
+  /* New Sections */
+  .testimonialsSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .testimonialsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .testimonialCard {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .testimonialCard p {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .testimonialCard h4 {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  

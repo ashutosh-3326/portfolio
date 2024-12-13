@@ -1,0 +1,94 @@
+.achievements {
+    padding: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .achievements h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .achievementsSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .achievementCard {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .achievementCard h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .achievementCard p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .achievementLogo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .achievementLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .achievementCard:hover {
+    transform: translateY(-10px); /* Card lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #ff6a00, #ee0979); /* Gradient on hover */
+  }
+  
+  .achievementCard:hover .achievementLogo {
+    transform: scale(1.1); /* Logo scale up on hover */
+  }
+  
+  .achievementCard h3, .achievementCard p {
+    transition: color 0.8s ease;
+  }
+  
+  .achievementCard:hover h3, .achievementCard:hover p {
+    color: #fff; /* Change text color to white on hover */
+  }
+  
+  .achievementsSection .achievementCard:nth-child(1):hover {
+    background: linear-gradient(45deg, #00b4d8, #0077b6);
+  }
+  
+  .achievementsSection .achievementCard:nth-child(2):hover {
+    background: linear-gradient(45deg, #fcbf49, #e85d04);
+  }
+  
+  .achievementsSection .achievementCard:nth-child(3):hover {
+    background: linear-gradient(45deg, #6a4c93, #ac6f87);
+  }
+  
+  .achievementsSection .achievementCard:nth-child(4):hover {
+    background: linear-gradient(45deg, #38b000, #0a620b);
+  }
+  

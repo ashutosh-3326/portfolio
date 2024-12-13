@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 50px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../assets/new-project1.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+.heroContent {
+  max-width: 50%;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  width: fit-content;
+  animation: typing 4s steps(30, end), blink 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #fff; }
+}
+
+.heroContent h1 .highlight {
+  color: #ff9800;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ctaButton:hover {
+  background: #e68a00;
+}
+
+.heroImageContainer {
+  flex: 1;
+}
+
+.heroImage {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.aboutSection {
+  padding: 50px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.aboutSection p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+.skillsSection {
+  padding: 50px;
+  text-align: center;
+}
+
+.skillsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skillCard {
+  padding: 20px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Social Links Section */
+.socialSection {
+  padding: 50px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.socialSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcons a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #ff9800;
+}

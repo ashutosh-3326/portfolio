@@ -1,0 +1,79 @@
+/* footer.module.css */
+.footer {
+    background: #5e9dba; /* Dark gradient background */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer .footerContent h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .footer .footerContent p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .footerContent .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer .footerContent .socialIcons a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer .footerContent .socialIcons a:hover {
+    color: #ff6347;  /* Tomato color for hover */
+    transform: scale(1.2);  /* Scale the icons slightly on hover */
+  }
+  
+  .footer .footerContent .footerLinks {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer .footerContent .footerLinks a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footerContent .footerLinks a:hover {
+    color: #ff6347;
+  }
+  
+  /* Small Screen Adjustments */
+  @media (max-width: 768px) {
+    .footer .footerContent {
+      padding: 1rem;
+    }
+  
+    .footer .footerContent .socialIcons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .footer .footerContent .footerLinks {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  

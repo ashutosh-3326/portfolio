@@ -1,0 +1,9 @@
+.projectHero {
+    height: 600px;
+    width: 100%;
+    border: 1px solid red; /* You can remove this if it's not needed */
+    background-image: url(../assets/project.jpg);
+    background-size: cover; /* Ensures the image covers the container without stretching */
+    background-position: center; /* Centers the image within the container */
+    background-repeat: no-repeat; /* Prevents image repetition */
+}
