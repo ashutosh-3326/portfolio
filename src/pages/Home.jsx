@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '../styles/home.module.css';
 import hero from '../assets/new-project1.jpg';
 import Header from '../component/Home/Header';
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+// import { FaInstagramSquare } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import Footer from '../component/Home/Footer';
 import SocialIcon from './SocialIcon';
 

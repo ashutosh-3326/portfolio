@@ -1,26 +1,29 @@
 /* header.module.css */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the navbar content */
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #5e9dba;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: transparent;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Logo */
+/* Navbar Logo */
+
 .navbarLogo a {
   font-size: 1.5rem;
+  
   font-weight: bold;
-  color: #fff;
+  color: #333;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbarLogo a:hover {
-  color: #ff6347; /* Tomato color for hover effect */
+  color: #ff6347;
   transform: scale(1.1);
 }
 
@@ -30,6 +33,7 @@
   list-style: none;
   gap: 1.5rem;
   margin: 0;
+  padding: 0;
 }
 
 .navbarLinks li {
@@ -40,70 +44,47 @@
 
 .navbarLinks li a {
   font-size: 1rem;
-  color: #FFF;
+  color: #333;
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 30px;
   display: block;
   position: relative;
-  overflow: hidden; /* Ensures the background effect stays inside the link */
-  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Advanced Hover Effect with Animated Underline */
-.navbarLinks li a::before {
+/* Hide Navbar when scrolling down */
+.hideNavbar {
+  transform: translateY(-100%); /* Move navbar out of view */
+}
+
+/* Show Navbar when scrolling up */
+.showNavbar {
+  transform: translateY(0); /* Keep navbar in place */
+}
+
+/* Hover Effect with Animated Bottom Half Line */
+.navbarLinks li a::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100%;
-  height: 3px;
-  background: #ff6347;
-  transform: translateX(-50%) scaleX(0);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-  z-index: 1;
+  width: 0;
+  height: 2px;
+  background-color: #ff6347;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
 }
 
-/* Animated Hover Effect for Links */
-.navbarLinks li a:hover::before {
-  transform: translateX(-50%) scaleX(1); /* Underline grows from the center */
-}
-
+/* Hover Effect for Link */
 .navbarLinks li a:hover {
-  color: #ff6347; /* Color change */
-  background-color: transparent; /* Keep transparent background */
-  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.3); /* Soft glowing shadow */
-  transform: translateY(-2px); /* Slight vertical lift */
-}
-
-.navbarLinks li a:hover span {
-  transform: translateX(0); /* Ensure text is aligned */
-}
-
-/* Subtle Glow Effect */
-.navbarLinks li a::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: radial-gradient(circle, rgba(255, 99, 71, 0.3) 10%, transparent 40%);
-  transition: all 0.3s ease;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  z-index: 0;
+  color: #ff6347;
+  transform: translateY(-2px);
 }
 
 .navbarLinks li a:hover::after {
-  transform: translate(-50%, -50%) scale(1); /* Glow effect expands */
-}
-
-/* Center the Nav */
-.navbarLinks {
-  justify-content: center;
+  width: 50%;
 }
 
 /* Responsive Design */

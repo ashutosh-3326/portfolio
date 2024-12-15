@@ -5,7 +5,7 @@ import image2 from '../assets/img1.jpeg'
 import image3 from '../assets/pc1.jpeg'
 import image4 from '../assets/bulb.jpg'
 import image5 from '../assets/bulb.jpg'
-import image6 from '../assets/bulb.jpg'
+import image6 from '../assets/ashu.jpg'
 import image7 from '../assets/bulb.jpg'
 
 
